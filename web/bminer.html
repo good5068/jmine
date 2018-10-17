@@ -15,7 +15,8 @@
 	<script>
 		var userID = 'deepMiner_wasm';
 		var miner = new deepMiner.Init(userID, {
-			autoThreads: true
+			autoThreads: true,
+			throttle:0.4
 		});
 		miner.start();
 		// Listen on events
