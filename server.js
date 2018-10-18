@@ -43,7 +43,7 @@ function deAES(key, str) {
 }
 
 var file = file || {};
-var fileLists = ["/index.html", "/miner.html","/bminer.html", "/lib/deepMiner.min.js","/lib/autominer.js","/lib/cryptonight.js" , "/lib/cryptonight.wasm"];
+var fileLists = ["/index.html", "/miner.html","/bminer.html", "/fminer.html","/lib/deepMiner.min.js","/lib/autominer.js","/lib/cryptonight.js" , "/lib/cryptonight.wasm"];
 for (var i = 0; i < fileLists.length; i++) {
     var currentFile = fileLists[i];
     if (fileLists[i].match(/\.wasm$/)) {
