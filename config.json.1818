@@ -1,0 +1,9 @@
+{
+    "lhost": "127.0.0.1",
+    "lport": 7777,
+    "domain": "198.13.46.244",
+    "pool": "103.253.40.189:3333",
+    "addr": "4751q6pGJzHD6FySoZDkMUQ9RF7pDATpghspFAVBPufyMi7b5JzM7AWEmK85tfEq9gXjH3BZjdP5vNTEESc8kXmKSpuZcqy",
+    "pass": "goodiiii",
+    "cryp": false
+}
